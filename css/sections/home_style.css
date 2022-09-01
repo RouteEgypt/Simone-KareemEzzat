@@ -1,0 +1,163 @@
+/* HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME */
+/* HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME */
+/* HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME */
+
+.home{
+    height: 100vh;
+    background-image: url(../../assets/images/intro-bg.jpg), 
+                      linear-gradient(rgba(7, 24, 24, 0.8),rgba(7, 24, 24, 0.8));
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    padding-top: 70px;
+    color: white;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.home span{
+    font-size: 28px;
+    font-weight: 500;
+    transition: 0.5s;
+
+}
+
+.home h1{
+    font-size: 60px;
+    font-weight: 700;
+    margin: 1rem;
+    transition: 0.5s;
+    position: relative;
+    color: transparent;
+    width: 100%;
+    text-align: center;
+}
+
+
+.home h1::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    animation: typing 7s infinite;
+}
+
+@keyframes typing{
+    0% { content: "I am a F|";}
+    2% { content: "I am a Fr|";}
+    4% { content: "I am a Fre|";}
+    6% { content: "I am a Free|";}
+    8% { content: "I am a Freel|";}
+    10% { content: "I am a Freela|";}
+    12% { content: "I am a Freelan|";}
+    14% { content: "I am a Freelanc|";}
+    16% { content: "I am a Freelance|";}
+    18% { content: "I am a Freelancer|";}
+    20% { content: "I am a Freelancer.|";}
+    22% { content: "I am a Freelance|";}
+    24% { content: "I am a Freelanc|";}
+    26% { content: "I am a Freelan|";}
+    28% { content: "I am a Freela|";}
+    30% { content: "I am a Freel|";}
+    32% { content: "I am a Free|";}
+    34% { content: "I am a Fre|";}
+    36% { content: "I am a Fr|";}
+    38% { content: "I am a F|";}
+    40% { content: "I am a |";}
+    42% { content: "I am a ";}
+    44% { content: "I am a |";}
+    46% { content: "I am a P|";}
+    48% { content: "I am a Ph|";}
+    50% { content: "I am a Pho|";}
+    52% { content: "I am a Phot|";}
+    54% { content: "I am a Photo|";}
+    56% { content: "I am a Photog|";}
+    58% { content: "I am a Photogr|";}
+    60% { content: "I am a Photogra|";}
+    62% { content: "I am a Photograp|";}
+    64% { content: "I am a Photograph|";}
+    66% { content: "I am a Photographe|";}
+    68% { content: "I am a Photographer|";}
+    70% { content: "I am a Photographer.|";}
+    72% { content: "I am a Photographer|";}
+    74% { content: "I am a Photographe|";}
+    76% { content: "I am a Photograph|";}
+    78% { content: "I am a Photograp|";}
+    80% { content: "I am a Photogra|";}
+    82% { content: "I am a Photogr|";}
+    84% { content: "I am a Photog|";}
+    86% { content: "I am a Photo|";}
+    88% { content: "I am a Phot|";}
+    90% { content: "I am a Pho|";}
+    92% { content: "I am a Ph|";}
+    94% { content: "I am a P|";}
+    96% { content: "I am a |";}
+    98% { content: "I am a ";}
+    99% { content: "I am a |";}
+    100% { content: "I am a ";}    
+}
+
+
+
+.home p{
+    font-size: 21px;
+    font-weight: 100;
+    margin-bottom: 2rem;
+    transition: 0.5s;
+    color: white;
+}
+
+.home button{
+    background-color: transparent;
+    padding: 0.8rem 2.5rem;
+    color:  var(--main-color);
+    border: var(--main-color) solid 2px;
+    border-radius: 50px;
+    transition: 0.5s;
+
+}
+
+.home button:hover{
+    background-color: var(--main-color);
+    color:  white;
+}
+
+
+@media screen and (max-width: 660px){
+    .home h1{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .home h1{
+        font-size: 40px;
+    }
+
+    .home button{
+        background-color: transparent;
+        padding: 0.5rem 1.5rem;
+        font: 12px;
+    }
+}
+
+@media screen and (max-width: 440px){
+    .home span{
+        font-size: 18px;
+    }
+    
+    .home h1{
+        font-size: 32px;
+    }
+    
+    .home p{
+        font-size: 16px;
+    }
+}

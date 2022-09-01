@@ -1,0 +1,59 @@
+/* Services Services Services Services Services Services Services Services Services Services Services Services Services Services Services Services Services Services Services Services Services */
+/* Services Services Services Services Services Services Services Services Services Services Services Services Services Services Services Services Services Services Services Services Services */
+/* Services Services Services Services Services Services Services Services Services Services Services Services Services Services Services Services Services Services Services Services Services */
+
+.services{
+    background-color: #F8F9FA;
+}
+.services .content{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.services .content .cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 1rem 0.5rem;
+}
+
+.services .content .cards h2{
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+}
+
+.services .content .cards .icon{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 1.2rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.075)
+}
+
+.services .content .cards .icon i{
+    color: var(--main-color);
+    font-size: 2rem;
+}
+
+.services .content .cards .text{
+    flex: 4;
+}
+
+.services .content .cards .text p{
+   line-height: 2rem;
+}
+
+/* MEDIA QUERY === MEDIA QUERY === MEDIA QUERY === MEDIA QUERY === MEDIA QUERY === MEDIA QUERY */
+
+@media screen and (max-width:760px){
+    .services .content .cards{
+        width: 100%;
+    }
+}

@@ -1,0 +1,116 @@
+/* NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR */
+/* NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR */
+/* NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR */
+
+.nav{
+    background-color: #111111 !important;
+    padding: 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 9999999;
+}
+
+.nav .container-fluid{
+    padding: 0;
+}
+
+.nav .nav-links{
+    flex-grow: 0;
+}
+
+.nav .nav-item a{
+    color: white !important;
+    padding: 0 0.9rem !important;
+}
+
+.nav .nav-item a:hover{
+    color: var(--main-color) !important;
+}
+
+.nav .nav-item a:focus{
+    color: var(--main-color) !important;
+}
+
+.nav .left-space{
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.nav .container-fluid .navbar-toggler{
+    color: white !important;
+    font-weight: 100;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0;
+    border: 2px solid white;
+}
+
+.nav .container-fluid img{
+    margin: 1rem;
+} 
+
+
+
+/* Media Query === Media Query === Media Query === Media Query === Media Query === Media Query*/
+
+@media screen and (max-width: 1005px) {
+    .nav .left-space{
+        display: none;
+    }
+    .nav{ 
+        padding-right: 10rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .nav .left-space{
+        display: none;
+    }
+
+    .nav{ 
+        padding-right: 0rem;
+    }
+
+    .container-fluid{
+        justify-content: space-between !important;
+    }
+
+    .nav .nav-links{
+        padding: 0.5rem 1rem;
+        background-color: black;
+
+    }
+
+    .nav .nav-links{
+        padding: 0.5rem 1rem;
+        background-color: black;
+
+    }
+    .nav .nav-item a{
+        padding: 0.5rem 0 !important;
+    }
+
+    .nav .nav-item a{
+        position: relative;
+    }
+
+    .nav .nav-item a::after{
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: #282828;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .nav .nav-item .last-link::after{
+        content: none;
+    }
+    
+    .nav .container-fluid button{
+        margin-right: 1rem;
+    } 
+}
+

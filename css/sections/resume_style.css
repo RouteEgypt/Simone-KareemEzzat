@@ -1,0 +1,112 @@
+/* Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume */
+/* Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume */
+/* Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume */
+
+.resume .content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.resume .content .left , .resume .content .right{
+    width: 50%;
+    padding: 0 1.5rem;
+    margin-top: 1rem;
+}
+
+.resume h2{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.resume .content .card{
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+.resume .content span{
+    display: inline-block;
+    width: fit-content;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 14px;
+    padding: 1px 5px;
+    border-radius: 3px;
+    margin-bottom: 0.8rem;
+}
+
+.resume .content h3{
+    font-size: 21px;
+    margin-bottom: 0.8rem;
+}
+
+.resume .content h4{
+    font-size: 16px;
+    color: red;
+    margin-bottom: 1.5rem;
+}
+
+.resume .bottom h2{
+    margin-top: 1rem;
+    padding: 0 1.5rem;
+}
+
+.resume .bottom h4{
+    margin-bottom: 0.5rem;
+    padding: 0;
+    color: #212529;
+    text-align: left;
+}
+
+.resume .bottom .left , .resume .bottom .right{
+    margin-top: 0.2rem;
+}
+
+.resume .bottom .cards{
+    margin-bottom: 2rem;
+}
+
+.resume .bottom .text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume .bottom .progress{
+    height: 0.5rem;
+}
+
+.resume .bottom .progress-bar{
+    background-color: var(--main-color);
+}
+
+.w-65{ width: 65%;}
+.w-95{ width: 95%;}
+.w-80{ width: 80%;}
+.w-70{ width: 70%;}
+.w-60{ width: 60%;}
+.w-99{ width: 99%;}
+
+.resume button{
+    background-color: transparent;
+    color: #6C757D;
+    font-weight: 500;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 1rem 2.5rem;
+    border: #6C757D solid 2px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+.resume button:hover{
+    background-color: #6C757D;
+    color: white;
+}
+
+/* MEDIA QUERY === MEDIA QUERY === MEDIA QUERY === MEDIA QUERY === MEDIA QUERY === MEDIA QUERY */
+
+@media screen and (max-width:760px){
+    .resume .content .left , .resume .content .right{
+        width: 100%;
+    }
+}

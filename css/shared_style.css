@@ -1,0 +1,189 @@
+:root{
+    --main-color: #20c897;
+}
+
+*:not(i){
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' !important;
+}
+
+.justify-content-center-center{
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    color: #252B33;
+}
+
+p, .label{
+    color: #4C4D4D;
+}
+
+.label{
+    margin-right: 0.2rem;
+}
+
+.section-sizing{
+    width: 100%;
+    padding: 3rem 5%;
+}
+
+::placeholder{
+    color: #65656594;
+}
+
+/* The overlapped Words at the beginning of each section style */
+/* The overlapped Words at the beginning of each section style */
+/* The overlapped Words at the beginning of each section style */
+
+.title{
+    position: relative;
+    text-align: center;
+}
+
+.title .bk-word{
+    display: block;
+    color: #F2F4F4;
+    text-align: center;
+    font-size: 8rem;
+    font-weight: 700;
+}
+
+.title .float-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    color: #212529;
+    font-size: 2rem;
+    font-weight: 700;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+
+.title .float-title::after{
+    content: "";
+    height: 3px;
+    width: 80px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+    /* MEDIA QUERY === MEDIA QUERY === MEDIA QUERY === MEDIA QUERY === MEDIA QUERY === MEDIA QUERY */
+
+    @media screen and (max-width:992px){
+        .title .bk-word{
+            font-size: 6rem;
+        }
+    }
+
+    @media screen and (max-width:770px){
+        .title .bk-word{
+            font-size: 4.5rem;
+        }
+    }
+
+    @media screen and (max-width:540px){
+        .title .bk-word{
+            font-size: 3.5rem;
+        }
+    }
+
+    @media screen and (max-width:420px){
+        .title .bk-word{
+            font-size: 3rem;
+        }
+    }
+
+    @media screen and (max-width:360px){
+        .title .bk-word{
+            font-size: 2.5rem;
+        }
+    }
+
+/* END === END === END === END === END === END === END === END === END */
+
+
+/* Footer === Footer === Footer === Footer === Footer === Footer  */
+/* Footer === Footer === Footer === Footer === Footer === Footer */
+/* Footer === Footer === Footer === Footer === Footer === Footer */
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 4.5rem 5rem;
+}
+
+.footer p{
+    color: #252B33;
+}
+
+.footer .left span{
+    color: var(--main-color);
+}
+
+.footer .right span{
+    color: rgba(128, 128, 128, 0.486);
+    font-weight: 100;
+    display: inline-block;
+    padding: 0 0.5rem;
+}
+
+    /* MEDIA QUERY === MEDIA QUERY === MEDIA QUERY === MEDIA QUERY === MEDIA QUERY === MEDIA QUERY */
+
+    @media screen and (max-width:992px){
+        .footer{
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer .left{
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .footer .right{
+            text-align: center;
+        }
+    }
+
+
+
+/* END === END === END === END === END === END === END === END === END */
+
+
+/* Back To Home Button === Back To Home Button === Back To Home Button */
+/* Back To Home Button === Back To Home Button === Back To Home Button */
+/* Back To Home Button === Back To Home Button === Back To Home Button */
+
+
+.top-btn{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    
+    padding: 0.65rem 0.8rem;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(169, 162, 162, 0.507);
+    border-radius: 50%;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 15%);    
+    transition: 0.5s;
+}
+
+.top-btn:hover{
+    background-color: var(--main-color);
+}
+
+/* END === END === END === END === END === END === END === END === END */

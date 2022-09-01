@@ -1,0 +1,117 @@
+/* Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio */
+/* Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio */
+/* Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio Portofolio */
+
+.portfolio{
+    background-color: #F8F9FA;
+}
+
+.portfolio .categories ul{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.portfolio .categories a{
+    text-decoration: none;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    color: grey;
+    position: relative;
+}
+
+.portfolio .categories a::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+
+.portfolio .categories a:hover{
+    color: var(--main-color);
+}
+
+.portfolio .categories a:hover::after {
+    background-color: var(--main-color);
+}
+
+.portfolio .categories a:focus{
+    color: var(--main-color);
+}
+
+.portfolio .categories a:focus::after {
+    background-color: var(--main-color);
+}
+
+
+.portfolio .content {
+    margin-top: 2rem;
+}
+
+.portfolio .content section{
+    width:calc(100% / 3);
+}
+
+.portfolio .content .image{
+    margin: 0.8rem;
+    position: relative;
+    border-radius: 5px;
+}
+
+.portfolio .content img{
+    width: 100%;
+    border-radius: inherit;
+    transition: 0.5s;
+}
+
+.portfolio .content .overlay{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: inherit;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.portfolio .content .overlay h5{
+    margin-bottom: 1rem;
+}
+
+.portfolio .content .overlay p{
+    color: white;
+}
+
+.portfolio .content .image:hover img{
+    transform: scale(1.02);
+}
+
+.portfolio .content .image:hover .overlay{
+    opacity: 1;
+    transform: scale(1.02);
+}
+
+
+
+
+
+/* MEDIA QUERY === MEDIA QUERY === MEDIA QUERY === MEDIA QUERY === MEDIA QUERY === MEDIA QUERY */
+
+@media screen and (max-width:730px){
+    .portfolio .content section{
+        width:70%;
+        margin: auto;
+    }
+}
